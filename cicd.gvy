@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        jdk 'java 11.0.18'
+        jdk '11.0.18'
     }
     stages {
         stage('compile') {
@@ -39,7 +39,7 @@ pipeline {
         stage('codecoverage') {
 
            tools {
-              jdk 'java 11.0.18'
+              jdk '11.0.18'
            }
 	         steps {
                 // step4
